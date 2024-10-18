@@ -1,0 +1,109 @@
+section {
+  width: 700px;
+  height: 800px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #DBDBDB;
+  margin: 50px auto;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+/* 아이디 입력 부분 */
+.id_box {
+  width: 100%;
+}
+.id_title {
+  font-size: 30px;
+}
+.id_check_btn {
+  flex-basis: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 24px;
+}
+.id_input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #DBDBDB;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+.id_input::placeholder {
+  color: #D0CFCF;
+  font-weight: 400;
+}
+/* 비밀번호 입력 부분 */
+.pw_box {
+  width: 100%;
+}
+.pw_title {
+  font-size: 30px;
+}
+.pw_input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid#DBDBDB;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+.pw_input::placeholder {
+  color: #D0CFCF;
+  font-weight: 400;
+}
+/* 버튼 영역 */
+.button_box {
+  width: 100%;
+  margin-top: 60px;
+}
+.sign_up_btn {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  color: #2C2C2C;
+}
+.sign_up_btn:hover {
+  cursor: pointer;
+}
+.sign_in_btn {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #2C2C2C;
+  color: #FFFFFF;
+}
+.sign_in_btn:hover {
+  cursor: pointer;
+}
+/* 아이디 비밀번호 찾기 */
+.forgot_id {
+  font-size: 30px;
+  color: #2C2C2C;
+}
+.forgot_pw {
+  font-size: 30px;
+  color: #2C2C2C;
+}
+/* 경고문 */
+.id_warning {
+  color: red;
+  display: none;
+}
+.pw_warning {
+  color: red;
+  display: none;
+}
+/* show */
+.show {
+  display: block;
+}

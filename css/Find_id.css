@@ -1,0 +1,99 @@
+section {
+  width: 600px;
+  height: 1100px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.name_box {
+  width: 100%;
+}
+.name_title {
+  font-size: 30px;
+  /* background-color: red; */
+}
+.name_input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border-color: #DBDBDB;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+.pw_box {
+  width: 100%;
+  /* background-color: red; */
+}
+.pw_title {
+  font-size: 30px;
+}
+.pw_input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border-color: #DBDBDB;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+.pw_check_box {
+  width: 100%;
+}
+.pw_check_title {
+  font-size: 30px;
+}
+.pw_check_input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border-color: #DBDBDB;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+.department {
+  margin-top: 30px;
+  width: 100%;
+}
+.management {
+
+}
+.development {
+
+}
+.email_box {
+  width: 100%;
+}
+.email_title {
+  font-size: 30px;
+}
+.email_input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border-color: #DBDBDB;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+.button_box {
+  width: 100%;
+  margin-top: 60px;
+  /* background-color: red; */
+}
+.sign_up_btn {
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #2C2C2C;
+  color: #FFFFFF;
+}
