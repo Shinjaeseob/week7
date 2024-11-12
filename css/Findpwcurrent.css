@@ -1,0 +1,47 @@
+section {
+  width: 700px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #DBDBDB;
+  margin: 250px auto;
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.find_id_box {
+  width: 100%;
+  text-align: center;
+}
+/* 버튼영역 */
+.button_box {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.sign_up_btn {
+  flex-basis: 40%;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #2C2C2C;
+  color: #FFFFFF;
+}
+.sign_up_btn:hover {
+  cursor: pointer;
+}
+/* 경고문 */
+.email_warning {
+  color: red;
+  display: none;
+}
+.email_check_warning {
+  color: red;
+  display: none;
+}
+/* show */
+.show {
+  display: block;
+}

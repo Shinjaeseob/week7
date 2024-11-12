@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  background-color: #FFFFFF;
+  /* border-bottom: 1px solid #ddd; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 좌측 상단 계정 */
+.account_box {
+  flex-basis: 20%;
+  display: flex;
+}
+.my_page {
+  flex-basis: 50%;
+  text-align: center;
+}
+.my_page_txt {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+} 
+.my_page_txt:hover {
+  cursor: pointer;
+}
+.log_out {
+  flex-basis: 50%;
+  text-align: center;
+}
+.log_out_txt {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+}
+.log_out_txt:hover {
+  cursor: pointer;
+}
+/* 중앙 메뉴 캘린더 */
+.year_box {
+  /* background-color: blue; */
+  flex-basis: 60%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.left_btn {
+  flex-basis: 40px;
+}
+.left_btn:hover {
+  cursor: pointer;
+}
+.left_btn_img {
+  width: 40px;
+}
+.year_txt_box {
+  flex-basis: auto;
+}
+.year_txt {
+  font-size: 40px;
+}
+.right_btn {
+  flex-basis: 40px;
+}
+.right_btn:hover {
+  cursor: pointer;
+}
+.right_btn_img {
+  width: 40px;
+}
+/* 우측 상단 메뉴 */
+.manager_btn_box {
+  /* background-color: aqua; */
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+}
+.toggle_off {
+  display: none;
+}
+.toggle_off:hover {
+  cursor: pointer;
+}
+.toggle_on {
+  display: none;
+}
+.toggle_on:hover {
+  cursor: pointer;
+}
+.active {
+  display: block;
+}
+/* 메인 메뉴 */
+section {
+  width: 100%;
+  height: 1000px;
+}
+/* 월 선택 버튼 */
+.month_form {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  /* background-color: #ddd; */
+}
+.month_btn_box {
+  display: flex;
+  width: 500px;
+  /* background-color: orangered; */
+  /* display: inline-block; */
+}
+.month_btn {
+  flex-basis: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+.month_btn:hover {
+  cursor: pointer;
+}
+.btn_on {
+  background-color: #E9DEF8;
+}
+.month_txt_box {
+  margin: 0 auto;
+  width: 30px;
+  /* background-color: red; */
+  margin-top: -48px;
+  /* display: inline-block; */
+}
+.month_txt {
+  font-size: 40px;
+}
+.empty_box {
+  flex-basis: 20%;
+  height: 40px;
+  /* background-color: yellow; */
+}
+/* 일정 메인 메뉴 */
+.schedule_content {
+  width: 100%;
+  /* background-color: #ddd; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.schedule_box {
+  flex-basis: calc(100% / 7);
+  height: 210px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.schedule_date {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  padding-top: 10px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.schedule_btn {
+  width: 100%;
+  height: 80px;
+  margin-top: 30px;
+  border: 1px solid #000;
+  background-color: #E9DEF8;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 80px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.schedule_btn:hover {
+  cursor: pointer;
+}

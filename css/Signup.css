@@ -131,13 +131,42 @@ section {
 .rank {
   margin-top: 30px;
   width: 100%;
+  display: flex;
+  /* background-color: #ddd; */
+}
+.member_box {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellowgreen; */
+  align-items: center;
+  flex-basis: 200px;
+  margin-left: -10px;
 }
 .member {
   vertical-align: middle;
   appearance: none; /* 기본 브라우저에서 기본 스타일 제거 */
-  width: 25px;
+  flex-basis: 25px;
   height: 25px;
   border: 3px solid #1D1B20;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+.member_txt {
+  flex-basis: 100px;
+  font-size: 24px;
+}
+.member:checked {
+  background-color: #111;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #111;
+}
+.member_disabled {
+  vertical-align: middle;
+  appearance: none; /* 기본 브라우저에서 기본 스타일 제거 */
+  width: 25px;
+  height: 25px;
+  border: 3px solid #DDD;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
@@ -157,6 +186,28 @@ section {
   outline: none;
   cursor: pointer;
 }
+.leader_box {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellowgreen; */
+  align-items: center;
+  flex-basis: 200px;
+  margin-left: -10px;
+}
+.leader_txt {
+  flex-basis: 100px;
+  font-size: 24px;
+}
+.leader_disabled {
+  vertical-align: middle;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #DDD;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
 .leader:checked {
   background-color: #111;
   border: 3px solid #fff;
@@ -166,6 +217,15 @@ section {
 .department {
   margin-top: 30px;
   width: 100%;
+  display: flex;
+}
+.management_box {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellowgreen; */
+  align-items: center;
+  flex-basis: 200px;
+  margin-left: -10px;
 }
 .management {
   vertical-align: middle;
@@ -177,12 +237,24 @@ section {
   outline: none;
   cursor: pointer;
 }
+.management_txt {
+  flex-basis: 100px;
+  font-size: 24px;
+}
 .management:checked {
   background-color: #111;
   border: 3px solid #fff;
   box-shadow: 0 0 0 3px #111;
 }
-.development {
+.design_box {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellowgreen; */
+  align-items: center;
+  flex-basis: 200px;
+  margin-left: -10px;
+}
+.design {
   vertical-align: middle;
   appearance: none;
   width: 25px;
@@ -192,7 +264,11 @@ section {
   outline: none;
   cursor: pointer;
 }
-.development:checked {
+.design_txt {
+  flex-basis: 100px;
+  font-size: 24px;
+}
+.design:checked {
   background-color: #111;
   border: 3px solid #fff;
   box-shadow: 0 0 0 3px #111;
@@ -258,10 +334,14 @@ section {
 .rank_radio_warning {
   color: red;
   display: none;
+  margin-left: 20px;
+  margin-top: -10px;
 }
 .department_radio_warning {
   color: red;
   display: none;
+  margin-left: 20px;
+  margin-top: -10px;
 }
 /* show */
 .show {

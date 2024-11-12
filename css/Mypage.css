@@ -1,0 +1,244 @@
+section {
+  width: 700px;
+  /* height: 800px; */
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #DBDBDB;
+  margin: 50px auto;
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+/* 이름 출력 부분 */
+.name_box {
+  width: 100%;
+}
+.name_title {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 30px;
+}
+.name_account {
+  font-size: 30px;
+  display: inline-block;
+}
+/* 이메일 출력 부분 */
+.email_box {
+  width: 100%;
+}
+.email_title {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 30px;
+}
+.email_account {
+  font-size: 30px;
+  display: inline-block;
+}
+
+/* 직급 선택 radio */
+.rank {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  /* background-color: #ddd; */
+}
+.member_box {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellowgreen; */
+  align-items: center;
+  flex-basis: 200px;
+  margin-left: -10px;
+}
+.member_disabled {
+  vertical-align: middle;
+  appearance: none; /* 기본 브라우저에서 기본 스타일 제거 */
+  width: 25px;
+  height: 25px;
+  border: 3px solid #D2D1D2;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+.member_disabled:checked {
+  background-color: #D2D1D2;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 0 3px #D2D1D2;
+}
+.member_disabled:hover {
+  cursor: default;
+}
+.member_disabled_txt {
+  flex-basis: 100px;
+  font-size: 24px;
+  color: #D2D1D2;
+}
+.member_disabled_txt:hover {
+  cursor: default;
+}
+.leader_box {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellowgreen; */
+  align-items: center;
+  flex-basis: 200px;
+  margin-left: -10px;
+}
+.leader_disabled {
+  vertical-align: middle;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #D2D1D2;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+.leader_disabled:hover {
+  cursor: default;
+}
+.leader_disabled_txt {
+  flex-basis: 100px;
+  font-size: 24px;
+  color: #D2D1D2;
+}
+.leader_disabled_txt:hover {
+  cursor: default;
+}
+
+/* 부서 선택 radio */
+.department {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+}
+.management_box {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellowgreen; */
+  align-items: center;
+  flex-basis: 200px;
+  margin-left: -10px;
+}
+.management_disabled {
+  vertical-align: middle;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #D2D1D2;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+.management_disabled:checked {
+  background-color: #D2D1D2;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px #D2D1D2;
+}
+.management_disabled:hover {
+  cursor: default;
+}
+.management_disabled_txt {
+  flex-basis: 100px;
+  font-size: 24px;
+  color: #D2D1D2;
+}
+.management_disabled_txt:hover {
+  cursor: default;
+}
+.design_box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 200px;
+  margin-left: -10px;
+}
+.design_disabled {
+  vertical-align: middle;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #D2D1D2;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+.design_disabled:hover {
+  cursor: default;
+}
+.design_disabled_txt {
+  flex-basis: 100px;
+  font-size: 24px;
+  color: #D2D1D2;
+}
+.design_disabled_txt:hover {
+  cursor: default;
+}
+/* 버튼 영역 */
+.button_box {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.correction_btn {
+  flex-basis: 230px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #2C2C2C;
+  color: #FFFFFF;
+}
+.correction_btn:hover {
+  cursor: pointer;
+}
+.sign_out_btn {
+  flex-basis: 230px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  color: #2C2C2C;
+}
+.sign_out_btn:hover {
+  cursor: pointer;
+}
+.calendar_btn {
+  flex-basis: 100%;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+  color: #2C2C2C;
+}
+.calendar_btn:hover {
+  cursor: pointer;
+}
+/* 아이디 비밀번호 찾기 */
+.forgot_id {
+  font-size: 30px;
+  color: #2C2C2C;
+}
+.forgot_pw {
+  font-size: 30px;
+  color: #2C2C2C;
+}
+/* 경고문 */
+.id_warning {
+  color: red;
+  display: none;
+}
+.pw_warning {
+  color: red;
+  display: none;
+}
+/* show */
+.show {
+  display: block;
+}

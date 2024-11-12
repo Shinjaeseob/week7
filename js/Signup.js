@@ -1,45 +1,55 @@
 var name_value = document.getElementById("name_value")
 var id_value = document.getElementById("id_value")
-// var id_value = document.getElementById("id_value")
 var pw_value = document.getElementById("pw_value")
 var pw_check_value = document.getElementById("pw_check_value")
 var email_value = document.getElementById("email_value")
 var member_value = document.getElementById("member")
 var leader_value = document.getElementById("leader")
 var management_value = document.getElementById("management")
-var development_value = document.getElementById("development")
+var design_value = document.getElementById("design")
 
-function onsignup() {
+function oncheck() {
+  var korean = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/
+  var special_characters = /[!@#$%^*+=-]/
+  var special_characters_email = /[!#$%^*+=-]/
+  var uppercase = /[A-Z]/
+  var number = /[0-9]/
 
-  if (name_value.value.length <= 7 || name_value.value.length >= 21) {  
+  var idReg = /^(?=.*[a-z])(?=.*[0-9]).{8,20}$/
+  var pwReg = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^*+=-]).{8,20}$/
+  var pwcheckReg = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,20}$/
+  var nameReg = /^(?=.*[가-힣a-zA-Z]).{2,20}$/
+  var emailReg = /^(?=.*[a-zA-Z])(?=.*[@])(?=.*[0-9]).{8,20}$/
+
+  if (!nameReg.test(name_value.value)) {
     document.getElementById("name_warning").classList.add("show")
   }
   else {
     document.getElementById("name_warning").classList.remove("show")
   }
 
-  if (id_value.value.length <= 7 || id_value.value.length >= 13) {  
+  if (!idReg.test(id_value.value) || korean.test(id_value.value) || special_characters.test(id_value.value) || uppercase.test(id_value.value)) {
     document.getElementById("id_warning").classList.add("show")
   }
   else {
     document.getElementById("id_warning").classList.remove("show")
   }
 
-  if (pw_value.value.length <= 5 || pw_value.value.length >= 13) {  
+  if (!pwReg.test(pw_value.value) || korean.test(pw_value.value)) {
     document.getElementById("pw_warning").classList.add("show")
   }
   else {
     document.getElementById("pw_warning").classList.remove("show")
   }
 
-  if (pw_check_value.value.length <= 5 || pw_check_value.value.length >= 13) {  
+  if (!pwcheckReg.test(pw_check_value.value) || korean.test(pw_check_value.value)) {
     document.getElementById("pw_check_warning").classList.add("show")
   }
   else {
     document.getElementById("pw_check_warning").classList.remove("show")
   }
 
-  if (email_value.value.length <= 7 || email_value.value.length >= 21) {  
+  if (!emailReg.test(email_value.value) || korean.test(email_value.value) || special_characters_email.test(email_value.value)) {  
     document.getElementById("email_warning").classList.add("show")
   }
   else {
@@ -52,9 +62,18 @@ function onsignup() {
     document.getElementById("rank_radio_warning").classList.add("show")
   }
 
-  if (management_value.checked || development_value.checked) {
+  if (management_value.checked || design_value.checked) {
     document.getElementById("department_radio_warning").classList.remove("show")
   } else {
     document.getElementById("department_radio_warning").classList.add("show")
   }
+
+}
+
+function onBack() {
+  location.href = "Login.jsp"
+}
+
+function movesignuplistpage() {
+  location.href = "../action/Signuplistpage.jsp"
 }
